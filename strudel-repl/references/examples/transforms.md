@@ -95,6 +95,16 @@ s("hh*8").rarely(x => x.speed(0.5))
 note("c3 e3 g3").struct("x ~ x ~ x ~ ~ x")
 ```
 
+## Scramble 随机打乱
+```js
+s("hh sd hh cp").scramble(4)  // 每4个cycle随机打乱顺序
+```
+
+## Shuffle 随机重排
+```js
+s("hh*8").shuffle(4)  // 每4个cycle随机重排
+```
+
 ## Mask 遮罩
 ```js
 n("0 1 2 3 4 5 6 7").scale("C4:major").sound("piano")
